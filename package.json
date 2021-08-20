@@ -1,8 +1,8 @@
 {
-  "name": "project-template",
+  "name": "form-practise",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Got Basic webpack, ESLint and Prettier set up.",
+  "main": ".eslintrc.js",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/macla7/project-template.git"
+    "url": "git+https://github.com/macla7/form-practise-js.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/macla7/project-template/issues"
+    "url": "https://github.com/macla7/form-practise-js/issues"
   },
-  "homepage": "https://github.com/macla7/project-template#readme",
+  "homepage": "https://github.com/macla7/form-practise-js#readme",
   "devDependencies": {
     "css-loader": "^6.2.0",
     "eslint": "^7.32.0",

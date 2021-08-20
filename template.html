@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Template</title>
   </head>
   <body>
-    <header>Hello</header>
-    <main>Mr.</main>
-    <footer>World</footer>
+    <form novalidate>
+      <label for="email">
+        <div>
+          <span>Please enter an email address:</span>
+          <abbr title="This field is mandatory" aria-label="required">*</abbr>
+        </div>
+        <input type="email" id="email" name="email" required />
+        <span class="error" aria-live="polite"></span>
+      </label>
+      <br />
+      <label for="country">
+        <div>
+          <span>Please enter your Country:</span>
+          <abbr title="This field is mandatory" aria-label="required">*</abbr>
+        </div>
+        <input
+          type="text"
+          id="country"
+          name="country"
+          minlength="4"
+          maxlength="56"
+          required
+          pattern="[A-Za-z\s]*"
+        />
+
+        <span class="error" aria-live="polite"></span>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
