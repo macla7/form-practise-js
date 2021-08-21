@@ -13,6 +13,7 @@ function showError() {
 }
 
 export default function () {
+  console.log(country.classList);
   country.addEventListener("input", () => {
     countryErr.textContent = "";
     if (country.validity.valid) {

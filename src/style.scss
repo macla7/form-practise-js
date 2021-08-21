@@ -1,16 +1,27 @@
 input:invalid {
+}
+
+input:not(:focus):placeholder-shown:invalid {
+  border: 1px solid #333;
+}
+input:not(:focus):invalid {
   border: 3px solid #900;
   background-color: #dff;
 }
 
-input[type="email"] {
+input:not(:focus):valid {
+  border: 1px solid #333;
+}
+
+input {
   appearance: none;
 
   border: 1px solid #333;
   margin: 0;
 
   font-family: inherit;
-  font-size: 90%;
+  font-size: 0.9rem;
+  padding: 0.2rem;
 
   box-sizing: border-box;
 }

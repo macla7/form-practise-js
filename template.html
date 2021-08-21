@@ -8,30 +8,84 @@
     <form novalidate>
       <label for="email">
         <div>
-          <span>Please enter an email address:</span>
+          <span>Email Address:</span>
           <abbr title="This field is mandatory" aria-label="required">*</abbr>
         </div>
-        <input type="email" id="email" name="email" required />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="my@email"
+        />
         <span class="error" aria-live="polite"></span>
       </label>
       <br />
       <label for="country">
         <div>
-          <span>Please enter your Country:</span>
+          <span>Country:</span>
           <abbr title="This field is mandatory" aria-label="required">*</abbr>
         </div>
         <input
           type="text"
           id="country"
           name="country"
-          minlength="4"
           maxlength="56"
           required
           pattern="[A-Za-z\s]*"
+          placeholder="Australia"
         />
-
         <span class="error" aria-live="polite"></span>
       </label>
+      <br />
+      <label for="zipcode">
+        <div>
+          <span>ZipCode:</span>
+          <abbr title="This field is mandatory" aria-label="required">*</abbr>
+        </div>
+        <input
+          type="text"
+          id="zip"
+          name="zipcode"
+          required
+          pattern="[0-9]{4}"
+          placeholder="3000"
+        />
+        <span class="error" aria-live="polite"></span>
+      </label>
+      <br />
+      <label for="password">
+        <div>
+          <span>Password:</span>
+          <abbr title="This field is mandatory" aria-label="required">*</abbr>
+        </div>
+        <input
+          type="text"
+          id="password"
+          name="password"
+          required
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          placeholder="Example123!"
+        />
+        <span class="error" aira-live="polite"></span>
+      </label>
+      <br />
+      <label for="password-conf">
+        <div>
+          <span>Password Confirmation:</span>
+          <abbr title="This field is mandatory" aria-label="required">*</abbr>
+        </div>
+        <input
+          type="text"
+          id="password-conf"
+          name="password-conf"
+          required
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          placeholder="Example123!"
+        />
+        <span class="error" aira-live="polite"></span>
+      </label>
+      <br />
       <button type="submit">Submit</button>
     </form>
   </body>
